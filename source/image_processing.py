@@ -18,8 +18,7 @@ class ImageProcessing:
     
     """
     Folder structure for input and output images
-    """
-            
+    """          
     input_path = './input_images/'
     output_path = './output_images/'
 
@@ -39,7 +38,7 @@ class ImageProcessing:
         """
         Converts the Image to Gray Scale
         """        
-        full_output_path = os.path.join(self.output_path, 'Number_2_GRAY.jpg')
+        full_output_path = os.path.join(self.output_path, outName)
 
         # load the image
         image = Image.open(imageName).convert('L')
@@ -111,6 +110,7 @@ if __name__ == "__main__":
     imgProce = ImageProcessing()    
 
     #Number_2_RGB.jpg is original input taken for manupulations.
+    
     #full_input_path = os.path.join(imgProce.input_path, 'Number_2_RGB.jpg')    
     #imgProce.printImageSize(full_input_path)
 
@@ -118,15 +118,18 @@ if __name__ == "__main__":
     #Number_2_RGB.jpg is resized to 8 by 8 pixels for understanding purpose
     #full_input_path_gray = os.path.join(imgProce.input_path, 'Number_2_RGB.jpg')
     #imgProce.resizeImage(full_input_path_gray,8,8,'Number_2_RGB_8_8.jpg')
-
+    #full_number_2_RGB_8_8 = os.path.join(imgProce.output_path, 'Number_2_RGB_8_8.jpg')
+    #imgProce.printImageSize(full_number_2_RGB_8_8)
     
     #The image is then converted to GRAY scale
-    #full_input_path = os.path.join(imgProce.input_path, 'Number_2_RGB.jpg')
-    #imgProce.convertImageToGrayScale(full_input_path,'Number_2_Gray.jpg')
+    #full_input_path = os.path.join(imgProce.output_path, 'Number_2_RGB_8_8.jpg')
+    #imgProce.convertImageToGrayScale(full_input_path,'Number_2_Gray_8_8.jpg')
+    #full_number_2_GRAY_8_8 = os.path.join(imgProce.output_path, 'Number_2_Gray_8_8.jpg')
+    #imgProce.printImageSize(full_number_2_GRAY_8_8)
     
     
     #Then check the size of image again and Print the GRAY Image in Matrix form
-    #full_input_path = os.path.join(imgProce.output_path, 'Number_2_Gray_28_28.jpg')    
+    #full_input_path = os.path.join(imgProce.output_path, 'Number_2_Gray_8_8.jpg')    
     #imgProce.printImageSize(full_input_path)
     
     #Print the COLORED (RGB) image in Matrix form
