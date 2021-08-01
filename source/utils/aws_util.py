@@ -45,4 +45,4 @@ class AwsUtil:
     
 if __name__ == "__main__":
     utilSS = AwsUtil()
-    uploaded = utilSS.uploadToAws('../output/1627649929798.jpg', 'compvision', '1627649929798.jpg','AKIAXKDGAKHAE2Y3BQNK','47DwH9BsG/7XfJqpP+cT+iHTXsra7DnjGoNIrvaB')    
+    
