@@ -24,4 +24,4 @@ class TwilioUtil:
 
 if __name__ == "__main__":
     utilSS = TwilioUtil()
-    #uploaded = utilSS.sendSMS('+15109747406', '+919890678703')    
+    
